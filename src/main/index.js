@@ -21,7 +21,10 @@ function createWindow () {
     height: 800,
     useContentSize: true,
     width: 1280,
-    //resizable: false,
+    minWidth: 1024,//最小宽度
+    minHeight: 768,//最小高度
+    title: "有趣的统计"
+    //resizable: false,1024*768
     
   })
 

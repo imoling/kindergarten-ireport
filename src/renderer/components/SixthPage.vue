@@ -91,23 +91,23 @@ html,body,#app{
 .content-column {
   display: flex;
   flex-direction: column;
-  
 }
 .content-column-p-1015 {
   padding: 10px 15px; 
 }
-.content-column div {
-  /* padding: 10px 15px; */
-  display: flex;
-  flex-direction: row;
-}
 .img-item-left {
+   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
 }
 .img-item-center {
+   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .img-item-right {
+   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
 </style>
