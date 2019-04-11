@@ -42,7 +42,8 @@ export default {
   data() {
     return {
       showImg: false,
-      imgSrc: ""
+      imgSrc: "",
+      winHight:"580px"
     };
   },
   components: {
@@ -59,7 +60,16 @@ export default {
     },
     viewImg() {
       this.showImg = false;
-    }
+    },
+     mounted() {
+    // 首先在Virtual DOM渲染数据时，设置下背景图的高度．
+    this.winHight = `${document.documentElement.clientHeight}px`;
+    // 然后监听window的resize事件．在浏览器窗口变化时再设置下背景图高度．
+    const that = this;
+    window.onresize = function temp() {
+      that.winHight = `${document.documentElement.clientHeight}px`;
+    };
+  },
   }
 };
 </script>
@@ -68,6 +78,10 @@ export default {
   display: flex;
   flex-direction: column;
   padding: 10px 15px;
+  height: 100%;
+}
+html,body,#app{
+  height: 98%;
 }
 .toolbar {
   display: flex;
@@ -77,9 +91,13 @@ export default {
 .content-column {
   display: flex;
   flex-direction: column;
+  
+}
+.content-column-p-1015 {
+  padding: 10px 15px; 
 }
 .content-column div {
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   display: flex;
   flex-direction: row;
 }

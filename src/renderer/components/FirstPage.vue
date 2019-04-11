@@ -1,29 +1,24 @@
 <template>
-  <div id="wrapper">
+  <div class="container">
     <div class="toolbar">
       <button class="backbtn" @click="backStart"></button>
       <button class="nextbtn" @click="next"></button>
     </div>
-    <main>
-      <div class="parent_box">
-        这页展示所有要统计的元素
-        <img class="child_box" src="~@/assets/image/main/jt1.png" height="85px" width="120px">
+      <div class="content-row btm-margin-60">
+        <img class="child_box" src="~@/assets/image/main/jt1.png" height="140px" width="160px">
         <img class="child_box" src="~@/assets/image/main/sw1.png" height="85px" width="120px">
-        <img class="child_box" src="~@/assets/image/main/jt2.png" height="85px" width="120px">
-        <img class="child_box" src="~@/assets/image/main/yf1.png" height="85px" width="120px">
+        <img class="child_box" src="~@/assets/image/main/jt2.png" height="160px" width="180px">
+        <img class="child_box" src="~@/assets/image/main/yf1.png" height="120px" width="160px">
         <img class="child_box" src="~@/assets/image/main/yf2.png" height="85px" width="120px">
         <img class="child_box" src="~@/assets/image/main/sw2.png" height="85px" width="120px">
-        <img class="child_box" src="~@/assets/image/main/jt3.png" height="85px" width="120px">
+        <img class="child_box" src="~@/assets/image/main/jt3.png" height="120px" width="160px">
         <img class="child_box" src="~@/assets/image/main/sw3.png" height="85px" width="120px">
-        <img class="child_box" src="~@/assets/image/main/jt4.png" height="85px" width="120px">
+        <img class="child_box" src="~@/assets/image/main/jt4.png" height="100px" width="180px">
       </div>
-    </main>
   </div>
 </template>
 
 <script>
-//   import SystemInformation from './LandingPage/SystemInformation'
-
 
 export default {
   name: "start-page",
@@ -56,4 +51,9 @@ export default {
   background-color: transparent;
   border: 0px;
 }
+.btm-margin-60 {
+  margin: 380px 400px 60px 33px;
+  height: 100%;
+}
+  
 </style>

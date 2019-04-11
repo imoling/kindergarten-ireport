@@ -4,8 +4,8 @@
       <button class="backbtn" @click="backStart"></button>
       <button class="nextbtn" @click="next"></button>
     </div>
-    <div class="content-column">
-      <div class="content-row">
+    <div class="content-column ">
+      <div class="content-row content-column-p-1015">
         <img
           src="~@/assets/image/tjzy/1.jpeg"
           width="380px"
@@ -29,7 +29,7 @@
           @click="clickImg($event)"
         >
       </div>
-      <div class="content-row">
+      <div class="content-row content-column-p-1015">
         <img
           src="~@/assets/image/tjzy/4.jpeg"
           width="420px"
@@ -38,7 +38,7 @@
         >
         <img
           src="~@/assets/image/tjzy/5.jpeg"
-          width="420"
+          width="420px"
           height="300px"
           @click="clickImg($event)"
         >
