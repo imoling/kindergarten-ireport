@@ -18,9 +18,12 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 800,
+   // height: 800,
     useContentSize: true,
-    width: 1280,
+   // width: 1280,
+    width: 1024,
+    height: 768,
+    
     minWidth: 1024,//最小宽度
     minHeight: 768,//最小高度
     title: "有趣的统计"

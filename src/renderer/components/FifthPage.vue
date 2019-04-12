@@ -8,9 +8,9 @@
       
         <img
           src="~@/assets/image/tjzyda/1.jpeg"
-          width="400px"
-          height="600px"
-          @click="clickImg($event)"
+          width="320px"
+          height="480px"
+         
         >
         <!-- 放大图片 -->
         <big-img v-if="showImg" @clickit="viewImg" :imgSrc="imgSrc"></big-img>
@@ -18,16 +18,16 @@
       
         <img
           src="~@/assets/image/tjzyda/2.jpeg"
-          width="400px"
-          height="600px"
-          @click="clickImg($event)"
+          width="320px"
+          height="480px"
+        
         >
      
         <img
           src="~@/assets/image/tjzyda/3.jpeg"
-         width="400px"
-          height="600px"
-          @click="clickImg($event)"
+         width="320px"
+          height="480px"
+         
         >
    
     </div>
@@ -67,21 +67,5 @@ export default {
 };
 </script>
 <style >
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 15px;
-}
-.toolbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.content-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
+
 </style>

@@ -8,39 +8,39 @@
       <div class="content-row content-column-p-1015">
         <img
           src="~@/assets/image/tjzy/1.jpeg"
-          width="380px"
-          height="300px"
-          @click="clickImg($event)"
+          width="300px"
+          height="240px"
+         
         >
         <!-- 放大图片 -->
         <big-img v-if="showImg" @clickit="viewImg" :imgSrc="imgSrc"></big-img>
 
         <img
           src="~@/assets/image/tjzy/2.jpeg"
-          width="380px"
-          height="300px"
-          @click="clickImg($event)"
+          width="300px"
+          height="240px"
+          
         >
 
         <img
           src="~@/assets/image/tjzy/3.jpeg"
-          width="380px"
-          height="300px"
-          @click="clickImg($event)"
+          width="300px"
+          height="240px"
+          
         >
       </div>
       <div class="content-row content-column-p-1015">
         <img
           src="~@/assets/image/tjzy/4.jpeg"
-          width="420px"
+          width="340px"
           height="300px"
-          @click="clickImg($event)"
+         
         >
         <img
           src="~@/assets/image/tjzy/5.jpeg"
-          width="420px"
+          width="340px"
           height="300px"
-          @click="clickImg($event)"
+          
         >
       </div>
  

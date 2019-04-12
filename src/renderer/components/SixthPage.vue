@@ -7,7 +7,7 @@
       <div class="img-item-left">
         <img
           src="~@/assets/image/cjtj/1.jpg"
-          width="360px"
+          width="320px"
           height="200px"
           @click="clickImg($event)"
         >
@@ -17,7 +17,7 @@
       <div class="img-item-center">
         <img
           src="~@/assets/image/cjtj/2.jpg"
-          width="360px"
+          width="320px"
           height="200px"
           @click="clickImg($event)"
         >
@@ -25,7 +25,7 @@
       <div class="img-item-right">
         <img
           src="~@/assets/image/cjtj/3.jpg"
-          width="360px"
+          width="320px"
           height="200px"
           @click="clickImg($event)"
         >
@@ -74,40 +74,5 @@ export default {
 };
 </script>
 <style>
-.container {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 15px;
-  height: 100%;
-}
-html,body,#app{
-  height: 98%;
-}
-.toolbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.content-column {
-  display: flex;
-  flex-direction: column;
-}
-.content-column-p-1015 {
-  padding: 10px 15px; 
-}
-.img-item-left {
-   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.img-item-center {
-   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.img-item-right {
-   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
 </style>
