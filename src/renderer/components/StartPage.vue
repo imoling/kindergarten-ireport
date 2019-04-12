@@ -237,6 +237,15 @@ body,
   height: 67px;
   background-color: transparent;
   border: 0px;
+  align-self: flex-end;
+}
+.refrshbtn {
+  cursor: pointer;
+  background-image: url("~@/assets/image/btn/cz_2.png");
+  width: 67px;
+  height: 67px;
+  background-color: transparent;
+  border: 0px;
 }
 .btm-margin-60 {
   margin: 210px 300px 15px 150px;

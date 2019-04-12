@@ -6,6 +6,7 @@ import ThirdPage from '@/components/ThirdPage'
 import FourthPage from '@/components/FourthPage'
 import FifthPage from '@/components/FifthPage'
 import SixthPage from '@/components/SixthPage'
+import DraggleTest from '@/components/DraggleTest'
 
 Vue.use(Router)
 
@@ -45,6 +46,11 @@ export default new Router({
       path: '/sixth',
       name: 'sixth-page',
       component: SixthPage
+    },
+    {
+      path: '/draggle',
+      name: 'draggle-page',
+      component: DraggleTest
     },
     {
       path: '*',

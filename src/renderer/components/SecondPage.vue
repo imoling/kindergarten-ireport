@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="content-row">
-        <div class="content-row width64">
+        <div class="content-row width64" @drop="drop($event)" @dragover="allowDrop($event)">
           <img
             class="child_box"
             src="~@/assets/image/main/jt1.png"
@@ -108,7 +108,7 @@
             </div>
           </div>
           <div class="report-flag"></div>
-          <div class="report-type-num">
+          <div class="report-type-num" @drop="drop($event)" @dragover="allowDrop($event)">
             <img
               src="~@/assets/image/main/3.png"
               width="52px"

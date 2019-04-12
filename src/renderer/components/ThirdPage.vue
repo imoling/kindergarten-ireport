@@ -2,6 +2,7 @@
   <div class="container">
     <div class="toolbar">
       <button class="backbtn" @click="backStart"></button>
+      <button class="refrshbtn" @click="refrsh"></button>
       <button class="nextbtn" @click="next"></button>
     </div>
     <div class="content-row">
@@ -26,7 +27,7 @@
             </div>
           </div>
           <div class="tq-report-flag"></div>
-          <div class="tq-report-type-num">
+          <div class="tq-report-type-num" @drop="drop($event)" @dragover="allowDrop($event)">
             <img
               src="~@/assets/image/tqtj/6.png"
               width="52px"
@@ -79,6 +80,9 @@ export default {
     },
     next() {
       this.$router.push("/fourth");
+    },
+    refrsh(){
+       this.$router.push("/third");
     },
     drag: function(event) {
       dom = event.currentTarget;
